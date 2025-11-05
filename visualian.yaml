@@ -1,0 +1,39 @@
+site:
+  name: "Visualian"
+  domain: "visualian.id"
+  description: "Wujudkan dunia digital secara profesional dan elegan dengan inovasi tanpa batas..."
+  logo: "/assets/logo.jpg"
+  theme:
+    gradient: "from-blue-600 to-purple-600"
+
+sections:
+  - id: "hero"
+    heading: "Wujudkan dunia digital secara profesional dan elegan dengan inovasi tanpa batas"
+    subheading: "Website | Aplikasi | Multimedia"
+    cta:
+      text: "Diskusikan Proyekmu"
+      link: "#contact"
+
+  - id: "services"
+    heading: "Layanan Kami"
+    items:
+      - title: "Website & Web App"
+        description: "Website modern dan sistem berbasis web yang cepat, responsif, dan andal."
+      - title: "Aplikasi & Sistem Voting"
+        description: "Sistem interaktif seperti voting realtime dan aplikasi event modern."
+      - title: "Desain & Multimedia"
+        description: "Desain kreatif dan video profesional untuk memperkuat identitas brand kamu."
+
+  - id: "portfolio"
+    heading: "Proyek Terbaru"
+    items:
+      - title: "Website Voting Duta Pariwisata Demak 2025"
+        description: "Sistem voting realtime dengan verifikasi otomatis."
+        image: "/assets/portfolio/demak-voting.jpg"
+
+  - id: "contact"
+    heading: "Hubungi Kami"
+    description: "Kami siap berdiskusi untuk membantu mewujudkan ide digitalmu."
+
+footer:
+  copyright: "© 2025 Visualian. All rights reserved."

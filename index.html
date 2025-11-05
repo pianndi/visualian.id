@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualian - Wujudkan Dunia Digital Secara Profesional</title>
+  <meta name="description"
+    content="Visualian membantu mewujudkan dunia digital secara profesional dan elegan dengan inovasi tanpa batas. Solusi teknologi terdepan untuk bisnis Anda.">
+  <meta name="keywords"
+    content="teknologi, digital, web development, mobile app, cloud solutions, AI, machine learning, cyber security, devops, Indonesia">
+  <meta name="author" content="Visualian">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://visualian.id/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://visualian.id/">
+  <meta property="og:title" content="Visualian - Wujudkan Dunia Digital Secara Profesional">
+  <meta property="og:description"
+    content="Visualian membantu mewujudkan dunia digital secara profesional dan elegan dengan inovasi tanpa batas. Solusi teknologi terdepan untuk bisnis Anda.">
+  <meta property="og:image" content="https://visualian.id/assets/images/og-image.jpg">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Visualian">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://visualian.id/">
+  <meta property="twitter:title" content="Visualian - Wujudkan Dunia Digital Secara Profesional">
+  <meta property="twitter:description"
+    content="Visualian membantu mewujudkan dunia digital secara profesional dan elegan dengan inovasi tanpa batas. Solusi teknologi terdepan untuk bisnis Anda.">
+  <meta property="twitter:image" content="https://visualian.id/assets/images/og-image.jpg">
+
+  <!-- PWA -->
+  <meta name="theme-color" content="#3b82f6">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Visualian">
+
+  <!-- Favicons (from favicon.io) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    as="style">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS -->
+  <!-- Use the non-minified files present in the repo during development -->
+  <!-- production (minified) CSS -->
+  <link rel="stylesheet" href="css/app.min.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/tailwind.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header Navigation -->
+  <header class="fixed w-full bg-white shadow-md z-50" id="header">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center">
+        <img src="assets/images/visualian-logo.png" alt="Visualian Logo" class="h-10 ">
+        <span class="ml-2 text-xl font-bold text-gray-900">Visualian</span>
+      </div>
+
+      <ul class="nav__menu hidden md:flex items-center gap-4" id="nav-menu">
+        <li>
+          <a href="#home" class="nav__link text-gray-600 hover:text-blue-600 transition-colors">Beranda</a>
+        </li>
+        <li>
+          <a href="#about" class="nav__link text-gray-600 hover:text-blue-600 transition-colors">Tentang</a>
+        </li>
+        <li>
+          <a href="#services" class="nav__link text-gray-600 hover:text-blue-600 transition-colors">Layanan</a>
+        </li>
+        <li>
+          <a href="#advantages" class="nav__link text-gray-600 hover:text-blue-600 transition-colors">Keunggulan</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="nav__link text-gray-600 hover:text-blue-600 transition-colors">Portofolio</a>
+        </li>
+        <li>
+          <a href="#testimonials" class="nav__link text-gray-600 hover:text-blue-600 transition-colors">Testimoni</a>
+        </li>
+        <!-- <li>
+          <a href="#pricing" class="nav__link text-gray-600 hover:text-blue-600 transition-colors">Paket</a>
+        </li> -->
+      </ul>
+
+      <div class="flex items-center space-x-4">
+        <a href="#contact"
+          class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors">Kontak Kami</a>
+        <button class="nav__toggle md:hidden text-gray-600 hover:text-blue-600 focus:outline-none" id="nav-toggle"
+          type="button" aria-label="Buka menu navigasi">
+          <span class="sr-only">Buka menu navigasi</span>
+          <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero pt-64 pb-20 bg-gradient-to-b from-blue-50 to-white" id="home">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="hero__title text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            Wujudkan Dunia Digital Secara
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Profesional &amp;
+              Elegan</span>
+          </h1>
+          <p class="hero__description text-lg text-gray-600">
+            Dengan inovasi tanpa batas, kami menghadirkan solusi teknologi terdepan
+            untuk mengoptimalkan bisnis Anda di era digital.
+          </p>
+          <div class="hero__buttons flex flex-wrap gap-4">
+            <a href="#contact"
+              class="bg-blue-600 text-white px-8 py-3 rounded-full inline-flex items-center space-x-2 hover:bg-blue-700 transition-colors">
+              <i class="fas fa-rocket"></i>
+              <span>Mulai Sekarang</span>
+            </a>
+            <a href="#services"
+              class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full inline-flex items-center space-x-2 hover:bg-blue-50 transition-colors">
+              <i class="fas fa-play"></i>
+              <span>Pelajari Lebih Lanjut</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-center">
+              <span class="block text-3xl font-bold text-blue-600">100+</span>
+              <span class="text-gray-600">Proyek Selesai</span>
+            </div>
+            <div class="text-center">
+              <span class="block text-3xl font-bold text-blue-600">50+</span>
+              <span class="text-gray-600">Klien Puas</span>
+            </div>
+            <div class="text-center">
+              <span class="block text-3xl font-bold text-blue-600">5+</span>
+              <span class="text-gray-600">Tahun Pengalaman</span>
+            </div>
+          </div>
+        </div>
+        <div class="relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+          <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&h=400&fit=crop"
+              alt="Digital Innovation" class="w-full h-auto object-cover">
+            <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Tentang Kami</span>
+        <h2 class="section-title">Membangun Masa Depan Digital Bersama</h2>
+        <p class="section-description">
+          Visualian adalah partner teknologi terpercaya yang berkomitmen menghadirkan
+          solusi digital inovatif untuk transformasi bisnis Anda.
+        </p>
+      </div>
+
+      <div class="about__content">
+        <div class="about__text" data-aos="fade-right">
+          <div class="about__item">
+            <div class="about__icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <div class="about__info">
+              <h3>Visi Kami</h3>
+              <p>Menjadi pelopor dalam menciptakan ekosistem digital yang berkelanjutan dan memberikan dampak positif
+                bagi masyarakat.</p>
+            </div>
+          </div>
+
+          <div class="about__item">
+            <div class="about__icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <div class="about__info">
+              <h3>Misi Kami</h3>
+              <p>Mengembangkan solusi teknologi yang user-friendly, scalable, dan sustainable untuk membantu bisnis
+                berkembang pesat.</p>
+            </div>
+          </div>
+
+          <div class="about__item">
+            <div class="about__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="about__info">
+              <h3>Nilai Kami</h3>
+              <p>Integritas, inovasi, dan kolaborasi adalah fondasi yang memandu setiap langkah kami dalam melayani
+                klien.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__visual" data-aos="fade-left">
+          <div class="about__image-container">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
+              alt="Visualian Team" class="about__image">
+            <div class="about__overlay">
+              <div class="about__play-btn">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Layanan Kami</span>
+        <h2 class="section-title">Solusi Teknologi Komprehensif</h2>
+        <p class="section-description">
+          Kami menyediakan rangkaian lengkap layanan teknologi untuk mendukung
+          pertumbuhan dan transformasi digital bisnis Anda.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card__icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="service-card__title">Pengembangan Web</h3>
+          <p class="service-card__description">
+            Website responsif dan aplikasi web modern dengan teknologi terdepan
+            untuk pengalaman pengguna yang optimal.
+          </p>
+          <div class="service-card__mockup">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop"
+              alt="Web Development" class="service-mockup">
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card__icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="service-card__title">Aplikasi Mobile</h3>
+          <p class="service-card__description">
+            Aplikasi iOS dan Android native maupun cross-platform dengan
+            performa tinggi dan antarmuka yang intuitif.
+          </p>
+          <div class="service-card__mockup">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=600&fit=crop"
+              alt="Mobile App" class="service-mockup">
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card__icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3 class="service-card__title">Cloud Solutions</h3>
+          <p class="service-card__description">
+            Migrasi dan manajemen infrastruktur cloud untuk skalabilitas,
+            keamanan, dan efisiensi operasional yang maksimal.
+          </p>
+          <div class="service-card__mockup">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop"
+              alt="Cloud Solutions" class="service-mockup">
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card__icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="service-card__title">AI &amp; Machine Learning</h3>
+          <p class="service-card__description">
+            Implementasi kecerdasan buatan untuk automasi proses bisnis
+            dan analisis data yang mendalam.
+          </p>
+          <div class="service-card__mockup">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop" alt="AI &amp; ML"
+              class="service-mockup">
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-card__icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="service-card__title">Cyber Security</h3>
+          <p class="service-card__description">
+            Perlindungan komprehensif untuk data dan sistem dengan
+            standar keamanan internasional terbaik.
+          </p>
+          <div class="service-card__mockup">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop"
+              alt="Cyber Security" class="service-mockup">
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-card__icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3 class="service-card__title">DevOps &amp; Automation</h3>
+          <p class="service-card__description">
+            Optimasi alur kerja pengembangan dengan CI/CD pipeline
+            dan automasi untuk efisiensi maksimal.
+          </p>
+          <div class="service-card__mockup">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" alt="DevOps"
+              class="service-mockup">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Keunggulan Kami</span>
+        <h2 class="section-title">Mengapa Memilih Visualian?</h2>
+        <p class="section-description">
+          Kombinasi pengalaman, teknologi terdepan, dan pendekatan yang
+          berfokus pada klien menjadikan kami partner ideal untuk kesuksesan Anda.
+        </p>
+      </div>
+
+      <div class="advantages__grid">
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="advantage-card__number">01</div>
+          <div class="advantage-card__icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3 class="advantage-card__title">Solusi End-to-End</h3>
+          <p class="advantage-card__description">
+            Dari konsep hingga implementasi, kami menyediakan layanan lengkap
+            untuk semua kebutuhan teknologi Anda.
+          </p>
+        </div>
+
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="advantage-card__number">02</div>
+          <div class="advantage-card__icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h3 class="advantage-card__title">Teknologi Terdepan</h3>
+          <p class="advantage-card__description">
+            Menggunakan stack teknologi terbaru dan framework modern
+            untuk hasil yang optimal dan future-proof.
+          </p>
+        </div>
+
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="advantage-card__number">03</div>
+          <div class="advantage-card__icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="advantage-card__title">Tim Berpengalaman</h3>
+          <p class="advantage-card__description">
+            Didukung oleh professionals bersertifikat dengan track record
+            yang terbukti di berbagai industri.
+          </p>
+        </div>
+
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="advantage-card__number">04</div>
+          <div class="advantage-card__icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="advantage-card__title">Delivery Tepat Waktu</h3>
+          <p class="advantage-card__description">
+            Komitmen terhadap timeline dengan metodologi agile
+            untuk memastikan proyek selesai sesuai jadwal.
+          </p>
+        </div>
+
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="advantage-card__number">05</div>
+          <div class="advantage-card__icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3 class="advantage-card__title">Support 24/7</h3>
+          <p class="advantage-card__description">
+            Dukungan teknis berkelanjutan untuk memastikan sistem
+            Anda berjalan lancar kapan saja.
+          </p>
+        </div>
+
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="600">
+          <div class="advantage-card__number">06</div>
+          <div class="advantage-card__icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="advantage-card__title">ROI Terukur</h3>
+          <p class="advantage-card__description">
+            Fokus pada hasil bisnis yang terukur dengan KPI yang jelas
+            dan reporting yang transparan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Portofolio &amp; Partner</span>
+        <h2 class="section-title">Proyek Unggulan &amp; Klien Terpercaya</h2>
+        <p class="section-description">
+          Beberapa proyek terbaik kami dan partner bisnis yang telah mempercayai
+          Visualian sebagai solusi teknologi mereka.
+        </p>
+      </div>
+
+      <div class="portfolio__content">
+        <div class="portfolio__projects">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card__image">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
+                alt="E-commerce Platform" class="project-image">
+              <div class="project-card__overlay">
+                <div class="project-card__info">
+                  <h4>E-commerce Platform</h4>
+                  <p>Marketplace B2B dengan 10,000+ produk</p>
+                  <a href="#" class="project-link" aria-label="Lihat proyek">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card__image">
+              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=400&fit=crop"
+                alt="Fintech App" class="project-image">
+              <div class="project-card__overlay">
+                <div class="project-card__info">
+                  <h4>Fintech Mobile App</h4>
+                  <p>Aplikasi pembayaran digital dengan 1M+ users</p>
+                  <a href="#" class="project-link" aria-label="Lihat proyek">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-card__image">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop"
+                alt="Logistics Platform" class="project-image">
+              <div class="project-card__overlay">
+                <div class="project-card__info">
+                  <h4>Smart Logistics</h4>
+                  <p>Platform tracking &amp; optimasi rute pengiriman</p>
+                  <a href="#" class="project-link" aria-label="Lihat proyek">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__partners" data-aos="fade-up" data-aos-delay="500">
+          <h3 class="partners__title">Dipercaya Oleh</h3>
+          <div class="partners__logos">
+            <div class="partner-logo">
+              <img src="https://placehold.co/200x100/f3f4f6/374151?text=SMK N 1 DEMAK" alt="SMK N 1 Demak"
+                class="partner-img">
+            </div>
+            <div class="partner-logo">
+              <img src="https://placehold.co/200x100/f3f4f6/374151?text=BPS Kab. Demak" alt="BPS Kabupaten Demak"
+                class="partner-img">
+            </div>
+            <div class="partner-logo">
+              <img src="https://placehold.co/200x100/f3f4f6/374151?text=Duta Pariwisata Demak"
+                alt="Duta Pariwisata Demak" class="partner-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Testimoni Klien</span>
+        <h2 class="section-title">Apa Kata Mereka Tentang Kami</h2>
+        <p class="section-description">
+          Kepuasan klien adalah prioritas utama kami. Simak pengalaman mereka
+          bekerja sama dengan Visualian.
+        </p>
+      </div>
+
+      <div class="testimonials__slider" data-aos="fade-up" data-aos-delay="200">
+        <div class="testimonial-card active">
+          <div class="testimonial-card__content">
+            <div class="testimonial-card__stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-card__text">
+              "Visualian berhasil mentransformasi sistem digital kami dengan sempurna.
+              Tim mereka sangat profesional dan responsif terhadap setiap kebutuhan.
+              ROI yang kami dapatkan melebihi ekspektasi."
+            </p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+                alt="Budi Santoso" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Budi Santoso</h4>
+                <p class="author-position">CEO, TechnoLogistics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__content">
+            <div class="testimonial-card__stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-card__text">
+              "Aplikasi mobile yang dikembangkan Visualian memberikan user experience
+              yang luar biasa. Download rate naik 300% dalam 3 bulan pertama.
+              Highly recommended!"
+            </p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1494790108755-2616b9e2b8c8?w=150&h=150&fit=crop&crop=face"
+                alt="Sari Dewi" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Sari Dewi</h4>
+                <p class="author-position">Product Manager, FinanceApp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__content">
+            <div class="testimonial-card__stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-card__text">
+              "Partnership dengan Visualian adalah keputusan terbaik. Mereka tidak hanya
+              mengembangkan teknologi, tetapi juga memahami bisnis kami secara mendalam.
+              True technology partner!"
+            </p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+                alt="Ahmad Rahman" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Ahmad Rahman</h4>
+                <p class="author-position">CTO, HealthcarePlus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials__controls">
+          <button class="testimonial-prev" type="button" aria-label="Sebelumnya">
+            <span class="sr-only">Sebelumnya</span>
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="testimonial-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+          <button class="testimonial-next" type="button" aria-label="Berikutnya">
+            <span class="sr-only">Berikutnya</span>
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <!-- <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Paket Layanan</span>
+        <h2 class="section-title">Pilih Paket yang Sesuai Kebutuhan</h2>
+        <p class="section-description">
+          Kami menyediakan berbagai paket layanan yang fleksibel dan dapat
+          disesuaikan dengan skala dan budget bisnis Anda.
+        </p>
+      </div>
+
+      <div class="pricing__grid">
+        <div class="pricing-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__title">Starter</h3>
+            <p class="pricing-card__description">Ideal untuk startup dan UKM</p>
+            <div class="pricing-card__price">
+              <span class="currency">Rp</span>
+              <span class="amount">15jt</span>
+              <span class="period">/proyek</span>
+            </div>
+          </div>
+          <div class="pricing-card__features">
+            <ul class="features-list">
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Website Responsif (5 halaman)</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Domain &amp; Hosting 1 tahun</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>SEO Basic Setup</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>SSL Certificate</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Support 3 bulan</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-card__footer">
+            <a href="#contact" class="btn btn-outline btn-full">Pilih Paket</a>
+          </div>
+        </div>
+
+        <div class="pricing-card featured" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-card__badge">Most Popular</div>
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__title">Professional</h3>
+            <p class="pricing-card__description">Untuk bisnis yang berkembang</p>
+            <div class="pricing-card__price">
+              <span class="currency">Rp</span>
+              <span class="amount">45jt</span>
+              <span class="period">/proyek</span>
+            </div>
+          </div>
+          <div class="pricing-card__features">
+            <ul class="features-list">
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Website/Web App (15 halaman)</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>CMS Admin Panel</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>API Integration</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Database Setup</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Analytics Dashboard</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Support 6 bulan</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-card__footer">
+            <a href="#contact" class="btn btn-primary btn-full">Pilih Paket</a>
+          </div>
+        </div>
+
+        <div class="pricing-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__title">Enterprise</h3>
+            <p class="pricing-card__description">Solusi lengkap untuk korporasi</p>
+            <div class="pricing-card__price">
+              <span class="currency">Rp</span>
+              <span class="amount">150jt+</span>
+              <span class="period">/proyek</span>
+            </div>
+          </div>
+          <div class="pricing-card__features">
+            <ul class="features-list">
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Custom Web/Mobile App</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Cloud Infrastructure</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>AI/ML Integration</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Security Audit</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>24/7 Monitoring</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Support 1 tahun</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-card__footer">
+            <a href="#contact" class="btn btn-outline btn-full">Konsultasi</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing__note" data-aos="fade-up" data-aos-delay="400">
+        <p>
+          <i class="fas fa-info-circle"></i>
+          Harga dapat disesuaikan berdasarkan kompleksitas dan kebutuhan spesifik proyek.
+          <a href="#contact">Hubungi kami</a> untuk konsultasi gratis.
+        </p>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CTA Section -->
+  <section class="cta pb-0" id="contact">
+    <div class="container">
+      <div class="cta__content" data-aos="zoom-in">
+        <h2 class="cta__title">Siap Memulai Transformasi Digital?</h2>
+        <p class="cta__description">
+          Bergabunglah dengan 100+ perusahaan yang telah mempercayai Visualian
+          sebagai partner teknologi mereka. Mari wujudkan visi digital Anda bersama kami.
+        </p>
+        <div class="cta__buttons">
+          <a href="mailto:hello@visualian.id" class="btn penawaran btn-primary btn-large">
+            <i class="fas fa-envelope"></i>
+            Dapatkan Penawaran
+          </a>
+          <a href="https://wa.me/6281234567890" class="btn wa btn-outline btn-large" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp Kami
+          </a>
+        </div>
+        <!-- <div class="cta__contact-info">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+62 812-3456-7890</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>hello@visualian.id</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Jakarta, Indonesia</span>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="cta__wave">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/images/visualian-logo-white.png" alt="Visualian Logo" class="footer__logo-img">
+            <span class="footer__logo-text">Visualian</span>
+          </div>
+          <p class="footer__description">
+            Wujudkan dunia digital secara profesional dan elegan dengan
+            inovasi tanpa batas bersama Visualian.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__links flex gap-8">
+          <div class="footer__column">
+            <h4 class="footer__title">Layanan</h4>
+            <ul class="footer__list">
+              <li><a href="#services" class="footer__link">Pengembangan Web</a></li>
+              <li><a href="#services" class="footer__link">Aplikasi Mobile</a></li>
+              <li><a href="#services" class="footer__link">Cloud Solutions</a></li>
+              <li><a href="#services" class="footer__link">AI &amp; Machine Learning</a></li>
+              <li><a href="#services" class="footer__link">Cyber Security</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__title">Perusahaan</h4>
+            <ul class="footer__list">
+              <li><a href="#about" class="footer__link">Tentang Kami</a></li>
+              <li><a href="#portfolio" class="footer__link">Portofolio</a></li>
+              <li><a href="#testimonials" class="footer__link">Testimoni</a></li>
+              <li><a href="#" class="footer__link">Karir</a></li>
+              <li><a href="#" class="footer__link">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__title">Dukungan</h4>
+            <ul class="footer__list">
+              <li><a href="#contact" class="footer__link">Kontak</a></li>
+              <li><a href="#" class="footer__link">FAQ</a></li>
+              <li><a href="#" class="footer__link">Dokumentasi</a></li>
+              <li><a href="#" class="footer__link">Status System</a></li>
+              <li><a href="#" class="footer__link">Support Ticket</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__title">Legal</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Kebijakan Privasi</a></li>
+              <li><a href="#" class="footer__link">Syarat &amp; Ketentuan</a></li>
+              <li><a href="#" class="footer__link">Kebijakan Cookie</a></li>
+              <li><a href="#" class="footer__link">GDPR</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2025 Visualian. All rights reserved. Designed with ❤️ in Indonesia.
+        </p>
+        <!-- <div class="footer__payment">
+          <span>Payment Methods:</span>
+          <img src="https://placehold.co/300x50/f3f4f6/374151?text=VISA+MASTERCARD+PAYPAL" alt="Payment Methods"
+            class="payment-img">
+        </div> -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" type="button">
+    <span class="sr-only">Kembali ke atas</span>
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

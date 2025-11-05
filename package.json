@@ -1,0 +1,61 @@
+{
+  "name": "visualian-website",
+  "version": "1.0.0",
+  "description": "Website single-page modern dan profesional untuk perusahaan teknologi Visualian",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 5500 -c-1",
+    "dev": "npx concurrently 'npx live-server --port=5500 --host=localhost' 'npx postcss css/tailwind.src.css -o css/tailwind.css --watch'",
+    "build": "npx postcss css/tailwind.src.css -o css/tailwind.css && npm run optimize",
+    "watch": "npx postcss css/tailwind.src.css -o css/tailwind.css --watch",
+    "optimize": "npm run optimize:images && npm run optimize:css && npm run optimize:js",
+    "optimize:images": "echo 'Optimize images manually or use imagemin-cli'",
+    "optimize:css": "npx postcss css/app.css -o css/app.min.css -u cssnano && npx postcss css/tailwind.css -o css/tailwind.min.css -u cssnano",
+    "optimize:js": "npx terser js/script.js -o js/script.min.js --source-map",
+    "build:prod": "npx postcss css/tailwind.src.css -o css/tailwind.css && npx postcss css/tailwind.css -o css/tailwind.min.css -u cssnano && npx postcss css/app.css -o css/app.min.css -u cssnano && npx terser js/script.js -o js/script.min.js --source-map",
+    "lighthouse": "npx lighthouse http://localhost:5500 --output html --output-path lighthouse-report.html",
+    "validate": "npx html-validate index.html",
+    "test": "npm run validate && npm run lighthouse"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pianndi/visualian.id.git"
+  },
+  "keywords": [
+    "website",
+    "technology",
+    "digital",
+    "responsive",
+    "modern",
+    "professional",
+    "single-page",
+    "visualian"
+  ],
+  "author": "Visualian Team",
+  "license": "ISC",
+  "homepage": "https://visualian.id",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.16",
+    "autoprefixer": "^10.4.21",
+    "clean-css-cli": "^5.6.2",
+    "cssnano": "^7.1.2",
+    "html-validate": "^8.7.4",
+    "http-server": "^14.1.1",
+    "lighthouse": "^11.3.0",
+    "live-server": "^1.2.2",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.1.16",
+    "terser": "^5.24.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
